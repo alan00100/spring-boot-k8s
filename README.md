@@ -1,6 +1,17 @@
 # new-springboot
 
+CREATE USER "arun"@"%" IDENTIFIED BY "12345";
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'arun'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+mysql -u arun -p 
+
 create database notes_app;   -- create database.
+
+
 
  vi /etc/mysql/mysql.conf.d/mysqld.cnf   _-------> open this file in mysql database server and add bind address as a 
  
