@@ -1,5 +1,7 @@
 # new-springboot
 
+create database notes_app;   -- create database.
+
  vi /etc/mysql/mysql.conf.d/mysqld.cnf   _-------> open this file in mysql database server and add bind address as a 
  
  bind-address            = 0.0.0.0
