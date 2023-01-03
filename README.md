@@ -25,5 +25,10 @@ and in vi src/main/resources/application.properties FILE
  
  add like this
  
+  {
+        "id": 4,
+        "title": "book-4",
+        "content": "new book-4"
+ }
  
  
