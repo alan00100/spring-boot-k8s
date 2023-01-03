@@ -1,4 +1,4 @@
-kubectl apply -f deploy.yaml 
+kubectl apply -f deployment-cluster-ip.yml
 
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
@@ -8,4 +8,4 @@ helm install nginx-ingress ingress-nginx/ingress-nginx --set controller.publishS
 
 kubectl --namespace default get services -o wide -w nginx-ingress-ingress-nginx-controller
 
-kubectl apply -f ingress.yaml 
+kubectl apply -f deployment-ingress.yaml 
